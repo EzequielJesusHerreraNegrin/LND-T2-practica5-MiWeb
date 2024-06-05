@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Poppins:wght@400;500;600&family=Roboto:wght@100&display=swap");
+
+/*------------------------------
+            GLOBAL
+--------------------------------*/
+
+:root {
+  --color-primary: #280400;
+  --color-secondary: #666;
+  --color-tertiary: #333;
+  --color-forth: #dfab82;
+  --color-background: #f8fcfc;
+  --color-menu: #20292f;
+  --color-menuhover: #71818c;
+  --color-buttom: #41547d;
+  --color-footer: #1f1f1f;
+  --color-social: #2ea3f2;
+
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-tertiary: "Open Sans", Arial, sans-serif;
+  --font-fourth: "muli", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  font-family: var(--font-tertiary);
+  color: var(--color-secondary);
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+/*------------------------------
+            GENERALES
+--------------------------------*/
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suit__buttom,
+.appointment__buttom {
+  padding-top: 18px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.buttom-primary {
+  box-shadow: 0px 10px 20px 0px rgba(65, 84, 125, 0.24);
+  background-color: var(--color-buttom);
+  line-height: inherit;
+  color: #fff;
+}
+
+.buttom-primary:hover {
+  box-shadow: 0px 20px 20px 0px rgba(65, 84, 125, 0.24);
+}
+
+.buttom-secondary {
+  background-color: #fff;
+  color: #41547d;
+  border-width: 0px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-family: "Muli", sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(65, 84, 125, 0.06);
+}
+
+footer {
+  bottom: 0;
+  background-color: yellow;
+}
+
+.separator {
+  display: block;
+  border-top-color: rgba(0, 0, 0, 0.12);
+  border-top-style: dashed;
+  border-top-width: 0.155em;
+  max-width: 50vw;
+}
+
+/*------------------------------
+            HEADER
+--------------------------------*/
+main {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+
+.header {
+  position: sticky;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 4.938rem;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(7, 61, 84, 0.17);
+  z-index: 999;
+  background-color: red;
+}
+
+.header__wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 1.37rem;
+  color: var(--color-menu);
+  font-weight: 600;
+}
+
+.header__svg {
+  /* width: 2rm;
+    height: 2em;
+    fill: var(--color-menu);
+    background-color: #fff;
+    display: block; */
+  display: none;
+}
+
+.header__nav {
+  padding-top: 1.25rem;
+}
+
+.header__list {
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header__item {
+  list-style: none;
+  padding-right: 1.25rem;
+  line-height: 1rem;
+}
+
+.header__link {
+  transition: opacity 0.4s ease-in-out;
+
+  padding-bottom: 1.25rem;
+  display: block;
+}
+
+.header__link:hover {
+  color: var(--color-menuhover);
+  opacity: 0.7;
+}
+
+.header__link--active {
+  font-weight: 600;
+}
+
+/*------------------------------
+    Suit yuorself section
+--------------------------------*/
+
+.suit_background {
+  margin: 0;
+  padding: 0 0 0 0;
+  background-size: cover;
+  background-image: linear-gradient(180deg, #ffffff 82%, #f7f9fc 75%);
+}
+
+.suit {
+  margin: auto;
+  position: relative;
+  background-size: cover;
+  max-width: 1080px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+
+.suit__wrapper {
+  display: flex;
+  word-wrap: break-word;
+}
+
+.suit__column {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin: 0;
+  float: left;
+  position: relative;
+  z-index: 2;
+  line-height: 1.7em;
+  min-height: 1px;
+  width: 50%;
+  mix-blend-mode: unset;
+}
+
+.suit__column--info {
+  padding-top: 8vw;
+  padding-right: 60px;
+  padding-bottom: 8vw;
+}
+
+.suit__title {
+  margin: inherit;
+  color: var(--color-tertiary);
+  padding-bottom: 0.625rem;
+  font-size: 3.75rem;
+  font-family: var(--font-secondary);
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1.4em;
+}
+
+.suit__title--subtitle {
+  font-size: 2.5rem;
+  color: var(--color-forth);
+}
+
+.suits__paragraph {
+  padding-bottom: 0;
+  margin: 0 0 2.5rem 0;
+}
+
+.suit_buttomWapper {
+  position: inherit;
+  display: inline-block;
+}
+
+.suit__imageCover {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.suit__image {
+  background-attachment: scroll;
+  height: 1059px;
+}
+
+/*--------------------------------------
+    END SUIT YOURSELF SECTION
+---------------------------------------*/
+
+/*------------------------------
+        APPOINTMENT SECTION
+--------------------------------*/
+
+.appointment {
+  padding: 3.375em 0;
+  background-color: var(--color-background);
+  position: relative;
+}
+
+.appointment__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.appointment__topPart {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1.6875em 0;
+  flex-direction: row;
+  height: fit-content;
+  width: 80vw;
+  position: relative;
+}
+
+.appointment__title {
+  display: inherit;
+  flex-wrap: wrap;
+  line-height: 1.5em;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  width: 30vw;
+  float: left;
+  font-size: 40px;
+  margin: 0 3.713rem 0 0;
+  padding: 0;
+  text-align: left;
+}
+
+.appointment__bottomPart {
+  display: flex;
+  width: 80vw;
+  max-width: 100vw;
+  margin: auto;
+  position: relative;
+  padding: 1.6875em 0;
+  justify-content: center;
+}
+
+.appointment__buttom {
+  height: fit-content;
+  background-color: var(--color-forth);
+}
+
+.appointment__element:nth-child(-n + 3) {
+  margin-right: 4vw;
+}
+
+.appointment__element {
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment__icon {
+  max-width: 5vw;
+}
+
+.appointment__info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  line-height: 2em;
+}
+
+/*--------------------------------------
+    GALLERY SECTION
+---------------------------------------*/
+
+.custom{
+  padding: 3.375rem 0;
+}
+
+.custom__wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom__info{
+  background-color: var(--color-buttom);
+  font-family: var(--font-tertiary);
+  color: #fff;
+  padding: 5rem 3.75rem;
+  display: flex;
+  max-width: 100vw;
+  position: relative;
+  width: 50vw;
+  margin-right: 5.5%;
+}
+
+.custom__title{
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.4em;
+  margin-bottom: 5.82%;
+  margin-top: 0%;
+  word-wrap: break-word;
+}
+
+.custom__MainText {
+  line-height: 2em;
+  font-size: 0.875rem;
+  margin: 0;
+
+}
+
+.custom__row {
+  display: flex;
+  margin-bottom: 5.82%;
+}
+
+.custom__info--left{
+  width: 45%;
+  margin-right: 5.5%;
+}
+
+.custom__info--right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom__iconBox{
+  margin: 1.5rem 1rem 0 0;
+  height: fit-content;
+  width: 4.6875em;
+}
+
+.custom__row{}
+.custom__rowInfo{}
+.custom__rowTitle{}
+.custom__rowParagraph{}
+
+/*--------------------------------------
+    END GALLERY SECTION
+---------------------------------------*/
